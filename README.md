@@ -55,3 +55,43 @@ All data cleaning and transformation was performed using **Power Query Editor in
 7.  **Created Date Column:** Used **Column From Examples** to merge Month and Year columns to create a proper date dimension for time-series analysis.
 
 After this cleaning process, the dataset was ready for modeling and profit calculation.
+
+## 🔍 Exploratory Data Analysis (DAX Measures)
+
+After cleaning, I created key performance measures using **DAX in Power BI** to analyze business performance.
+
+#DAX Measures Created:
+
+
+Here is the polished markdown for this new section - with the correct DAX formulas employers will understand:
+🔍 Exploratory Data Analysis (DAX Measures)
+
+After cleaning, I created key performance measures using **DAX in Power BI** to analyze business performance.
+
+**DAX Measures Created:**
+
+1.  **Total Revenue**
+    ```DAX
+    Total Revenue = SUM(Sales[Sales])
+2.  *Total Cost*
+    Total Cost = SUM(Sales[Cost])
+3.  *Net Profit*
+    Net Profit = [Total Revenue] - [Total Cost]
+4.  *Profit Margin %*
+    Profit Margin % = DIVIDE([Net Profit], [Total Revenue]) * 100
+5.  *Average Monthly Profit*
+    Avg Monthly Profit = AVERAGEX(VALUES('Date'[MonthYear]), [Net Profit])
+These measures were used to build visuals to track overall profitability and identify the most productive department.
+
+**Pro Tip:** I used `DIVIDE()` for Profit Margin instead of `/` - it prevents errors when sales is zero. That's best practice in Power BI and interviewers love it.
+
+---
+
+Do you want me to now combine EVERYTHING into **one final complete README.md** file?
+
+1. About the project
+2. Data Cleaning (ETL)
+3. This DAX Analysis section
+4. Your name & LinkedIn
+
+So you can just paste once and your GitHub is done?
