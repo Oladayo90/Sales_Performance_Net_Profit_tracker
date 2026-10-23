@@ -14,8 +14,9 @@ The main goal was to help the business understand its overall profitability over
 - Highlight the most efficient and least efficient departments
 
 ## 📊 Dataset
-- **File:** Sales_Tracker.csv
-- **Key Columns:** Date, Department, Product, Quantity, Cost Price, Selling Price, Total Cost, Total Sales
+- **File:** data/Semantic_Sales.csv (60k+ transactions)
+- **Columns:** OrderDate, ProductKey, Quantity, Unit Price, Sales, Cost
+- **New Calculated Column:** Net Profit = Sales - Cost
 
 ## 🛠️ Tools Used
 - Microsoft Excel (Data Cleaning, Formulas, Pivot Tables)
