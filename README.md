@@ -81,17 +81,35 @@ After cleaning, I created key performance measures using **DAX in Power BI** to 
     Profit Margin % = DIVIDE([Net Profit], [Total Revenue]) * 100
 5.  *Average Monthly Profit*
     Avg Monthly Profit = AVERAGEX(VALUES('Date'[MonthYear]), [Net Profit])
-These measures were used to build visuals to track overall profitability and identify the most productive department.
-
-**Pro Tip:** I used `DIVIDE()` for Profit Margin instead of `/` - it prevents errors when sales is zero. That's best practice in Power BI and interviewers love it.
-
----
-
-Do you want me to now combine EVERYTHING into **one final complete README.md** file?
+ 
 
 1. About the project
 2. Data Cleaning (ETL)
 3. This DAX Analysis section
 4. Your name & LinkedIn
 
-So you can just paste once and your GitHub is done?
+
+## 💡 Key Insights
+
+1.  **Revenue vs. Profitability Gap:** The Phone Accessories department generated the highest total revenue, but was **not the most profitable** due to high cost price and low margins.
+
+2.  **Most Efficient Department:** The **Clothing department** recorded the highest profit margin over time, making it the most productive and efficient department.
+
+3.  **Profitability Trend:** Despite high sales volume in Phone Accessories, its net profit was eroded by operational costs, while Clothing maintained consistent profitability.
+
+## ✅ Recommendations & Lasting Solutions
+
+To increase productivity and long-term profitability, the firm should consider the following:
+
+**For Overall Business:**
+1.  **Re-evaluate Pricing Strategy:** Increase selling price for Phone Accessories or negotiate better rates with suppliers to reduce cost price.
+2.  **Resource Allocation:** Allocate more investment and marketing to the Clothing department since it delivers higher profit margin.
+3.  **Cost Control System:** Implement a cost-tracking dashboard in Power BI to monitor departmental costs in real-time.
+
+**Specific to Phone Accessories Trend:**
+1.  **Bundle Strategy:** Bundle low-margin phone accessories with high-margin clothing items to improve overall basket profit.
+2.  **Focus on High-Margin SKUs:** Analyze which specific phone accessories have better margins and discontinue loss-making variants.
+3.  **Trend Analysis:** Phone Accessories sales are trend-driven. Stock fast-moving, trendy items in small quantities to avoid overstock and obsolescence.
+4.  **Supplier Review:** Source alternative suppliers or buy in bulk during off-peak seasons to reduce the Total Cost.
+
+> **Conclusion:** The business should not be driven by revenue alone but by **profit margin**. Shifting focus from high-revenue to high-margin departments will ensure sustainable growth.
